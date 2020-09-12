@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">lab-mobil</string>
+    <string name="next">Продолжить</string>
+    <string name="Surname">Фамилия</string>
+    <string name="Name">Имя</string>
+    <string name="noname">Введите Имя!</string>
+    <string name="nosurname">Введите Фамилию!</string>
+    <string name="hello">Привет, </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

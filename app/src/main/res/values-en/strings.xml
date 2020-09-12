@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">lab-mobil</string>
+    <string name="next">Next</string>
+    <string name="Surname">Surname</string>
+    <string name="Name">Name</string>
+    <string name="noname">Enter your Name!</string>
+    <string name="nosurname">Enter your Surname!</string>
+    <string name="hello">"Hello, "</string>
+</resources>
