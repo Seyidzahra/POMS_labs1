@@ -15,8 +15,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.DataHolder> {
     private List<User> list;
 
     //конструктор
-    public MyAdapter(ArrayList<User> users) {
-        list = new ArrayList<>();
+    public MyAdapter(List<User> users) {
         list = users;
     }
 

@@ -9,11 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".NameActivity"></activity>
+        <activity android:name=".Activity_for_8_lab" />
+        <activity android:name=".Activity6Lab" />
+
+        <receiver
+            android:name=".MyReceiver_For5Lab"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name=".MyIntentService_for_5"
+            android:exported="false" />
+
         <activity android:name=".lab5_activity">
             <intent-filter>
-                <action android:name="android.intent.action.SEND"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-                <data android:mimeType="text/plain"/>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
             </intent-filter>
         </activity>
         <activity android:name=".lab4_activity_spisok" />

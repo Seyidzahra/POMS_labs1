@@ -1,6 +1,7 @@
 package com.example.lab_mobil;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -13,6 +14,7 @@ import java.util.List;
 public class lab4_activity_spisok extends AppCompatActivity {
 
     private ArrayList<User> users  = new ArrayList<>();
+    private ViewModel viewModel;
 
     RecyclerView rv;
     MyAdapter adapter;
@@ -22,9 +24,8 @@ public class lab4_activity_spisok extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lab4_spisok);
 
+        viewModel = new ViewModel(getApplication());
 
-        Intent intent = getIntent();
-        users = intent.<User>getParcelableArrayListExtra("1");
 
 
         rv = findViewById(R.id.RecyclerView);
@@ -32,7 +33,7 @@ public class lab4_activity_spisok extends AppCompatActivity {
         rv.setLayoutManager(new LinearLayoutManager(this));
 
 
-    adapter = new MyAdapter(users);
+    adapter = new MyAdapter(viewModel.getAllUsers());
     adapter.notifyDataSetChanged();
     rv.setAdapter(adapter);
     }

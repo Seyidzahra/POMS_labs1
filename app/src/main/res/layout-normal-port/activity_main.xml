@@ -39,7 +39,7 @@
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="lab"
@@ -52,11 +52,33 @@
         android:onClick="lab5"
         android:text="5" />
 
+    <Button
+        android:id="@+id/button_8lab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_lab8"
+        android:text="8" />
+
     <TextView
         android:id="@+id/context_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Контекстное меню :D" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Выберите размер текста" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:isScrollContainer="false"
+        android:max="12" />
 
 </LinearLayout>
